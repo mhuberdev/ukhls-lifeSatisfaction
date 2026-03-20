@@ -4,15 +4,11 @@ author: "Michael Huber"
 output: html_document
 ---
 
----
-title: "Unemployment and Life Satisfaction"
-author: "Michael Huber"
-output: html_document
----
-
 # Project Summary
 
-This project examines how unemployment affects subjective well-being using panel data from the UK Household Longitudinal Study (UKHLS). The analysis focuses on life satisfaction as the main outcome and combines descriptive statistics, panel regression models, and an event-study design to study both average and dynamic effects of job loss. The broader motivation is that unemployment is likely to affect well-being not only through income loss, but also through changes in social status, expectations, routine, and mental health. In the thesis, the main empirical finding is that unemployment is associated with a substantial and persistent decline in life satisfaction. :contentReference[oaicite:2]{index=2}
+This project examines how unemployment affects subjective well-being using panel data from the UK Household Longitudinal Study (UKHLS). The analysis focuses on life satisfaction as the main outcome and combines descriptive statistics, panel regression models and an event-study design to study both average and dynamic effects of job loss. The broader motivation is that unemployment is likely to affect well-being not only through income loss, but also through changes in social status, expectations, routine and mental health. 
+
+In the thesis, the main empirical finding is that unemployment is associated with a substantial and persistent decline in life satisfaction.
 
 # Research Question
 
@@ -20,15 +16,18 @@ The central question is:
 
 How does unemployment affect life satisfaction?
 
-More specifically, the project asks whether individuals who become unemployed report lower life satisfaction, whether this effect remains after controlling for observed and unobserved heterogeneity, especially income. The thesis also explores whether the effect differs across socioeconomic groups, especially by gender and education. 
+More specifically, the project asks whether individuals who become unemployed report lower life satisfaction, whether this effect remains after controlling for income and other observed and unobserved heterogeneity. 
+The paper also explores whether the effect differs across socioeconomic groups, especially by gender and education. 
 
 # Data
 
-The analysis uses End User Licence data from the UK Household Longitudinal Study (UKHLS), the successor to the British Household Panel Survey (BHPS). The project uses waves 1 to 10, covering the period from 2009 to 2019. The UKHLS is well suited for this research question because it provides repeated observations on employment status, life satisfaction, health, income, family characteristics, and other socioeconomic factors. 
+The analysis uses End User Licence data from the UK Household Longitudinal Study (UKHLS), the successor to the British Household Panel Survey (BHPS). The project uses waves 1 to 10, covering the period from 2009 to 2019. The UKHLS is well suited for this research question because it provides repeated observations on employment status, life satisfaction, health, income, family characteristics, other socioeconomic factors. 
 
 The original panel includes more than 85,000 individuals and approximately 410,000 observations. After filtering and sample restrictions, the thesis works with an unbalanced working-age panel of roughly 210,000 observations. The analysis focuses on individuals aged 18 to 65 and restricts the main comparison to employed, self-employed, and unemployed respondents, excluding out-of-labour-force groups such as retirees and students from the main specification. 
 
-The main dependent variable is life satisfaction, measured on a 1 to 7 scale and standardized for comparability. The main explanatory variable is a binary unemployment indicator. Additional controls include relationship status, education, household income, physical health, number of children, urban status, and a measure related to depression history intended to reduce omitted-variable concerns connected to mental health
+The main dependent variable is life satisfaction, measured on a 1 to 7 scale and standardized for comparability. The main explanatory variable is a binary unemployment indicator. 
+
+Additional controls include relationship status, education, household income, physical health, number of children, urban status, and a measure related to depression history intended to reduce omitted-variable concerns connected to mental health
 
 # Methodology
 
@@ -72,4 +71,4 @@ Third, the fixed-effects design identifies effects for individuals whose employm
 
 # Repository Note
 
-This repository shares the cleaned project code and workflow structure used for the thesis. It is intended for transparency and portfolio presentation rather than full plug-and-play replication. Raw UKHLS data are not distributed here because of licensing restrictions. The scripts document the full workflow from data preparation to descriptive analysis, panel regressions, and event-study estimation. 
+This repository shares the cleaned project code and workflow structure used for the thesis. It is intended for transparency and portfolio presentation rather than full plug-and-play replication. Raw UKHLS data are not distributed here because of licensing restrictions. The scripts document the full workflow from data preparation to descriptive analysis, regressions and event-study estimation. 
