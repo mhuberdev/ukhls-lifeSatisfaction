@@ -1,0 +1,37 @@
+---
+title: "Unemployment and Life Satisfaction"
+author: "Michael Huber"
+output: html_document
+---
+
+# Motivation
+
+This project studies how unemployment affects life satisfaction using UKHLS panel data.
+
+# Data
+
+UKHLS data are access-restricted and therefore not included in this repository.
+
+# Variable Construction
+
+This section documents the main variables used in the analysis.
+
+# Descriptive Evidence
+
+This section presents summary statistics and descriptive figures.
+
+# Regression Strategy
+
+This section outlines the pooled, fixed-effects, and random-effects specifications.
+
+# Event Study
+
+This section presents the event-study design and coefficients around unemployment entry.
+
+# Main Findings
+
+Unemployment is associated with a substantial decline in life satisfaction.
+
+# Limitations
+
+Full replication requires authorized access to UKHLS data.
