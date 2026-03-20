@@ -1,4 +1,3 @@
-# ukhls-lifeSatisfaction
 # Unemployment and Life Satisfaction: Evidence from UKHLS Panel Data
 
 ## Overview
@@ -12,8 +11,7 @@ The analysis uses UKHLS data. Raw data are not included in this repository becau
 
 ## Methods
 - Descriptive analysis
-- Panel regression models
-- Fixed effects estimation
+- Regression models (Fixed Effects (DiD), Random Effects, OLS)
 - Event-study design
 
 ## Main Finding
