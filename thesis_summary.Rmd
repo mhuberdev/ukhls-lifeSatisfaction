@@ -4,34 +4,72 @@ author: "Michael Huber"
 output: html_document
 ---
 
-# Motivation
+---
+title: "Unemployment and Life Satisfaction"
+author: "Michael Huber"
+output: html_document
+---
 
-This project studies how unemployment affects life satisfaction using UKHLS panel data.
+# Project Summary
+
+This project examines how unemployment affects subjective well-being using panel data from the UK Household Longitudinal Study (UKHLS). The analysis focuses on life satisfaction as the main outcome and combines descriptive statistics, panel regression models, and an event-study design to study both average and dynamic effects of job loss. The broader motivation is that unemployment is likely to affect well-being not only through income loss, but also through changes in social status, expectations, routine, and mental health. In the thesis, the main empirical finding is that unemployment is associated with a substantial and persistent decline in life satisfaction. :contentReference[oaicite:2]{index=2}
+
+# Research Question
+
+The central question is:
+
+How does unemployment affect life satisfaction?
+
+More specifically, the project asks whether individuals who become unemployed report lower life satisfaction, whether this effect remains after controlling for observed and unobserved heterogeneity, especially income. The thesis also explores whether the effect differs across socioeconomic groups, especially by gender and education. 
 
 # Data
 
-UKHLS data are access-restricted and therefore not included in this repository.
+The analysis uses End User Licence data from the UK Household Longitudinal Study (UKHLS), the successor to the British Household Panel Survey (BHPS). The project uses waves 1 to 10, covering the period from 2009 to 2019. The UKHLS is well suited for this research question because it provides repeated observations on employment status, life satisfaction, health, income, family characteristics, and other socioeconomic factors. 
 
-# Variable Construction
+The original panel includes more than 85,000 individuals and approximately 410,000 observations. After filtering and sample restrictions, the thesis works with an unbalanced working-age panel of roughly 210,000 observations. The analysis focuses on individuals aged 18 to 65 and restricts the main comparison to employed, self-employed, and unemployed respondents, excluding out-of-labour-force groups such as retirees and students from the main specification. 
 
-This section documents the main variables used in the analysis.
+The main dependent variable is life satisfaction, measured on a 1 to 7 scale and standardized for comparability. The main explanatory variable is a binary unemployment indicator. Additional controls include relationship status, education, household income, physical health, number of children, urban status, and a measure related to depression history intended to reduce omitted-variable concerns connected to mental health
+
+# Methodology
+
+The empirical strategy combines static and dynamic approaches.
+
+First, the project estimates pooled OLS, fixed-effects, and random-effects models. The preferred specification is a two-way fixed-effects model with individual and wave fixed effects. This design helps absorb time-invariant individual heterogeneity and common time shocks. The thesis motivates this approach as a way to address selection concerns, reverse causality and omitted-variable bias more carefully than a purely cross-sectional design.
+
+Second, the project estimates an event-study specification around the first observed unemployment event. This makes it possible to inspect pre-trends and the evolution of life satisfaction before and after unemployment entry. The event-study window is trimmed to four periods before and three periods after the event because of data limitations.
+
+The methodological discussion in the thesis also explicitly acknowledges current debates around two-way fixed-effects estimators, including the risk of problematic weighting under treatment-effect heterogeneity. The project therefore uses the event-study evidence as an additional diagnostic for pre-trends and dynamic treatment patterns. 
 
 # Descriptive Evidence
 
-This section presents summary statistics and descriptive figures.
+The descriptive analysis already shows clear differences between employment groups. Unemployed respondents report lower average life satisfaction, worse GHQ mental-health scores, lower household income, and weaker partnership rates than other employed groups. In the summary statistics, average life satisfaction is 4.4 for unemployed respondents compared with 5.2 for the comparison group, and diagnosed depression is more common among the unemployed group. 
 
-# Regression Strategy
+A descriptive figure by age and employment status shows that employed and self-employed respondents have relatively similar life-satisfaction profiles, while unemployed respondents consistently report lower levels across the age distribution. This pattern supports the decision to focus the main comparison on employed, self-employed, and unemployed individuals. 
 
-This section outlines the pooled, fixed-effects, and random-effects specifications.
+# Main Results
 
-# Event Study
+The regression results show a large and statistically significant negative relationship between unemployment and life satisfaction across all main specifications. In pooled OLS, the coefficient on unemployment falls from about -0.51 in the parsimonious model to about -0.32 once controls are added. In the preferred fixed-effects specification with controls, the estimate is about -0.212 standard deviations. The random-effects estimate is also negative and significant.
 
-This section presents the event-study design and coefficients around unemployment entry.
+The substantive interpretation in the thesis is that workers who lose their jobs report a meaningful decline in life satisfaction even after controlling for observed characteristics and individual fixed effects. The relatively small change in the unemployment coefficient after adding additional controls within the FE framework is interpreted as evidence that the result is not being driven primarily by omitted observed covariates. 
 
-# Main Findings
+The event-study results strengthen this interpretation. The coefficients before unemployment are close to zero and not statistically distinguishable from zero, which is consistent with limited pre-trends in the available event window. At the onset of unemployment, life satisfaction drops sharply, and the post-event coefficients remain clearly negative in the following periods. 
 
-Unemployment is associated with a substantial decline in life satisfaction.
+# Interpretation
+
+Substantively, the project suggests that unemployment affects well-being through more than just contemporaneous income loss. Because income is controlled for in the main regressions, the remaining effect likely captures non-monetary aspects of unemployment, such as loss of status, social identity, structure, and expectations about the future. The thesis also discusses the possibility that stigma and social norms shape how strongly unemployment affects life satisfaction. 
+
+The heterogeneity analysis suggests that men experience a larger reduction in life satisfaction than women, while education-based subgroup differences are less pronounced in the reported estimates. The thesis interprets the gender result partly through the lens of social norms and role expectations. 
 
 # Limitations
 
-Full replication requires authorized access to UKHLS data.
+Several limitations remain.
+
+First, the data are access-restricted and therefore cannot be included in this repository. Full replication requires authorized access to UKHLS data through the UK Data Service. 
+
+Second, even with fixed effects and rich controls, time-varying unobserved confounders may still matter. The thesis discusses this explicitly and treats the estimates as carefully motivated but not beyond critique. 
+
+Third, the fixed-effects design identifies effects for individuals whose employment status changes during the observed panel. This means the estimates are especially informative about transitions into unemployment rather than the full long-run experience of all unemployed individuals. The event-study specification is also limited by the finite panel window and by a smaller number of observations in later post-treatment periods.
+
+# Repository Note
+
+This repository shares the cleaned project code and workflow structure used for the thesis. It is intended for transparency and portfolio presentation rather than full plug-and-play replication. Raw UKHLS data are not distributed here because of licensing restrictions. The scripts document the full workflow from data preparation to descriptive analysis, panel regressions, and event-study estimation. 
