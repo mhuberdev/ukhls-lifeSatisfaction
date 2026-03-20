@@ -1,7 +1,7 @@
 # Unemployment and Life Satisfaction: Evidence from UKHLS Panel Data
 
 ## Overview
-This project examines how unemployment affects subjective well-being using UK Household Longitudinal Study (UKHLS) panel data.
+This project examines how unemployment affects subjective well-being using UK Household Longitudinal Study (UKHLS) panel data. Code written in R.
 
 ## Research Question
 How does unemployment affect life satisfaction over time?
