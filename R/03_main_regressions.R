@@ -2,7 +2,7 @@
 # Project: UKHLS Unemployment and Life Satisfaction
 # Author: Michael Huber
 # Script: 03_main_regressions.R
-# Purpose: Panel regression models and heterogeneity
+# Purpose: Regression models and causality checks
 # --------------------------------------------------
 
 rm(list = ls())

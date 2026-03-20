@@ -2,7 +2,7 @@
 # Project: UKHLS Unemployment and Life Satisfaction
 # Author: Michael Huber
 # Script: 04_event_study.R
-# Purpose: Event-study analysis around unemployment entry
+# Purpose: Event-study analysis to confirm treatment effects of static model estimates
 # --------------------------------------------------
 
 rm(list = ls())

@@ -2,7 +2,7 @@
 # Project: UKHLS Unemployment and Life Satisfaction
 # Author: Michael Huber
 # Script: 01_prepare_data.R
-# Purpose: Clean and merge UKHLS panel data
+# Purpose: Clean and merge UKHLS data
 # --------------------------------------------------
 
 rm(list = ls())

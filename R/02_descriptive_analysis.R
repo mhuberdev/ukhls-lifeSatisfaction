@@ -2,7 +2,7 @@
 # Project: UKHLS Unemployment and Life Satisfaction
 # Author: Michael Huber
 # Script: 02_descriptive_analysis.R
-# Purpose: Descriptive statistics and exploratory plots
+# Purpose: Descriptive statistics and exploratory data analysis
 # --------------------------------------------------
 
 rm(list = ls())
