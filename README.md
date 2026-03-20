@@ -12,7 +12,7 @@ https://ukdataservice.ac.uk/
 
 ## Methods
 - Descriptive analysis
-- Regression models (Fixed Effects (Staggered static DiD), Random Effects, Pooled OLS)
+- Regression models (Two-way Fixed Effects (Staggered static DiD), Random Effects, Pooled OLS)
 - Event-study design (Dynamic)
 
 ## Main Finding
