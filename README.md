@@ -21,7 +21,7 @@ Incomplete Adaptation: Unlike after other major life events (e.g., divorce, wido
 
 ## Repository Structure
 - `R/`: analysis scripts
-- `outputs/`: selected figures and tables, tbd
+- `outputs/`: selected figures and tables, tbd.
 - `thesis_summary.Rmd`: narrative version of the analysis
 
 ## Reproducibility
