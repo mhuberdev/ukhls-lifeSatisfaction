@@ -33,13 +33,16 @@ Additional controls include relationship status, education, household income, ph
 
 The empirical strategy combines static and dynamic approaches.
 
-First, the project estimates pooled OLS, fixed-effects, and random-effects models. The preferred specification is a two-way fixed-effects model with individual and wave fixed effects. This design helps absorb time-invariant individual heterogeneity and common time shocks. The thesis motivates this approach as a way to address selection concerns, reverse causality and omitted-variable bias more carefully than a purely cross-sectional design.
+First, the paper estimates pooled OLS, fixed-effects, and random-effects models. The preferred specification is a two-way fixed-effects model with individual and wave fixed effects. This design helps absorb time-invariant individual heterogeneity and common time shocks. The thesis motivates this approach as a way to address selection concerns, reverse causality and omitted-variable bias more carefully than a purely cross-sectional design.
+$$
+Y_{it} = U_{it}\beta + X'_{it}\gamma + \delta_t + \mu_i + \epsilon_{it}
+$$
+
+Second, the project estimates an event-study specification around the first observed unemployment event. This makes it possible to inspect pre-trends and the evolution of life satisfaction before and after unemployment entry. The event-study window is trimmed to four periods before and three periods after the event because of data limitations.
 
 $$
 Y_{it}=\sum_{\substack{h=-4\\ h\ne -1}}^{3}\beta_h \mathbf{1}[U_{it}=h] + \delta_t + \mu_i + \epsilon_{it}
 $$
-
-Second, the project estimates an event-study specification around the first observed unemployment event. This makes it possible to inspect pre-trends and the evolution of life satisfaction before and after unemployment entry. The event-study window is trimmed to four periods before and three periods after the event because of data limitations.
 
 The methodological discussion in the thesis also explicitly acknowledges current debates around two-way fixed-effects estimators, including the risk of problematic weighting under treatment-effect heterogeneity. The project therefore uses the event-study evidence as an additional diagnostic for pre-trends and dynamic treatment patterns. 
 

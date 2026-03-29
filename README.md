@@ -15,9 +15,17 @@ https://ukdataservice.ac.uk/
 
 ## Methods
 
+
 - Descriptive analysis
 - Regression models (Two-way Fixed Effects (Staggered static DiD), Random Effects, Pooled OLS)
+$$
+Y_{it}=\sum_{\substack{h=-4\\ h\ne -1}}^{3}\beta_h \mathbf{1}[U_{it}=h] + \delta_t + \mu_i + \epsilon_{it}
+$$
+
 - Event-study design (Dynamic)
+$$
+Y_{it}=\sum_{\substack{h=-4\\ h\ne -1}}^{3}\beta_h \mathbf{1}[U_{it}=h] + \delta_t + \mu_i + \epsilon_{it}
+$$
 
 ## Main Finding
 
