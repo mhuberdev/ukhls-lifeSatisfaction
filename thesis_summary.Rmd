@@ -66,6 +66,7 @@ Substantively, the project suggests that unemployment affects well-being through
 
 The heterogeneity analysis suggests that men experience a larger reduction in life satisfaction than women, while education-based subgroup differences are less pronounced in the reported estimates. The thesis interprets the gender result partly through the lens of social norms and role expectations. 
 
+
 # Limitations
 
 Several limitations remain.
@@ -75,6 +76,13 @@ First, the data are access-restricted and therefore cannot be included in this r
 Second, even with fixed effects and rich controls, time-varying unobserved confounders may still matter. The thesis discusses this explicitly and treats the estimates as carefully motivated but not beyond critique. 
 
 Third, the fixed-effects design identifies effects for individuals whose employment status changes during the observed panel. This means the estimates are especially informative about transitions into unemployment rather than the full long-run experience of all unemployed individuals. The event-study specification is also limited by the finite panel window and by a smaller number of observations in later post-treatment periods.
+
+# Implications
+
+Policy measures that specifically address the non-financial aspects of unemployment are required. 
+
+This could promote an improvement of both short-term life satisfaction of the unemployed, as well as reemployment prospects and finances in the long run. 
+Initiatives can help reduce stigma, provide job-search assistance and exchange better coping mechanisms, thereby enhancing well-being in the immediate aftermath of job loss.
 
 # Repository Note
 
