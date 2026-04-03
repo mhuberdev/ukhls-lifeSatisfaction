@@ -22,12 +22,26 @@ https://ukdataservice.ac.uk/
 - Event-study design (Dynamic)
 
 ## Main Finding
-
+### Main
 Unemployment is associated as a main driver of purpose and with a substantial decline in life satisfaction.
 
-Incomplete Adaptation: Unlike after other major life events (e.g., divorce, widowhood) people fail to adapt to job loss
+### Relativity
+Subjective well-being is not evaluated in purely absolute terms (also due to study design as setup evaluates CHANGE). People assess their situation relative to:
+- their own past circumstances
+- other people
+- their expectations about life
+This means that job loss does not reduce well-being only through lower income. It can also reduce relative status, disrupt identity, and weaken one’s perceived social position.
 
+### Set-point theory
+Set-point theory suggests that individuals tend to return, at least partly, to a baseline level of well-being after major life events.
+
+For this thesis, the key point is: many life shocks show partial or substantial adaptation over time
 ![alt text](image.png)
+unemployment appears different, because adaptation is often incomplete
+
+### Implications
+This makes unemployment especially important in well-being research. It suggests that job loss is not just a temporary negative shock, but may have a more persistent effect on life satisfaction than a simple set-point model would predict.
+
 
 ## Repository Structure
 
